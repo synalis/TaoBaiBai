@@ -1,0 +1,319 @@
+/*...........style for base................*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, p, th, td, header, section, footer, aside, article, figure, table, thead, colgroup, tbody, tfoot {
+    margin: 0;
+    padding: 0;
+}
+
+header, section, footer, aside, article, figure {
+    display: block;
+}
+
+body {
+    font: 12px/1.4 "微软雅黑", Verdana, Helvetica, Sans-Serif;
+    color: #333;
+    background-color: #f6f6f6;
+    color: #333;
+}
+
+ol, ul, dl {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+:focus {
+    outline: 0;
+}
+
+a:link, a:visited {
+    color: #42413C;
+    text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #e60012;
+    cursor: pointer;
+}
+
+a img {
+    border: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    word-wrap: break-word;
+}
+
+em {
+    font-style: normal;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.fn {
+    float: none;
+}
+
+.tal {
+    text-align: left;
+}
+
+.tac {
+    text-align: center;
+}
+
+.tar {
+    text-align: right;
+}
+
+.clr {
+    clear: both;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.bgc {
+    background-color: #fff;
+}
+
+/*...........style for content................*/
+@media screen and (max-width: 600px) {
+    .left li img {
+        padding: 0 3% 0 3%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .left li img {
+        padding: 0 5% 0 18%;
+    }
+}
+
+.header {
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+
+.header .header-con {
+    width: 1000px;
+    margin: 0 auto;
+    height: 80px;
+    overflow: hidden;
+}
+
+.logo img {
+    /*padding: 15px;*/
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+
+}
+.logo {
+    height: 100%;
+    /*padding: 15px;*/
+    display: inline-block;
+    margin: 0 345px 0 350px;
+}
+
+.header b {
+    font-size: 20px;
+    font-weight: 600;
+    height: 60px;
+    display: inline-block;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 100px);
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.left {
+    width: 30%;
+    border-right: solid 30px #f6f6f6;
+    min-width: 110px;
+}
+
+.left h2 {
+    height: 108px;
+    line-height: 108px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: normal;
+    color: #999;
+}
+
+.left li {
+    height: 108px;
+    line-height: 108px;
+    font-size: 1.4rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.left .zhifubao {
+    background-color: #2384e3;
+}
+
+.left .weixin {
+    background-color: #2ac233;
+}
+
+.left .yiwangtong {
+    background-color: #fd555e;
+}
+
+.right {
+    width: 100%;
+}
+
+.right-top {
+    font-size: 16px;
+    border-bottom: solid 25px #f6f6f6;
+    padding: 15px 0;
+    height: 260px;
+}
+
+.right-top li {
+    line-height: 25px;
+    text-align: center;
+}
+.top-left {
+    float: left;
+    margin: 10px 0 0 50px;
+    border: 2px solid rgba(0,0,0,.3);
+    padding: 5px;
+}
+.top-right {
+    float: right;
+    margin-top: 30px;
+    margin-right: 70px;
+}
+
+.right-top li span {
+    display: inline-block;
+    text-align: left;
+    width: 200px;
+    padding: 10px;
+}
+#alipay {
+    display: flex;
+}
+#alipay2 {
+    display: none;
+}
+#alipay3 {
+    display: none;
+}
+.right-bottom .alipay {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 50px 0;
+}
+
+.alipay .code-wrap {
+    padding: 0 10px 0 120px;
+}
+
+.alipay .code-money b {
+    display: block;
+    padding: 3px 0 20px 4px;
+    font-size: 1.6rem;
+    color: #f9522a;
+}
+
+.code-wrap .QRcode {
+    width: 165px;
+    height: 205px;
+    border: solid #c9c9c9 1px;
+    box-shadow: 1px 1px 2px #bbb;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.code-wrap .QRcode .QRcode-desc {
+    padding-top: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.code-wrap .QRcode .QRcode-desc-text {
+    text-align: left;
+    position: relative;
+    top: -2px;
+    left: 6px;
+}
+
+.code-wrap .tips {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.code-wrap .tips a {
+    text-decoration: underline;
+    color: #b0b0b0;
+}
+
+
+.zs,
+.je {
+    display: inline-block;
+    /*margin-left: 50px;*/
+    font: 16px/1.4 "微软雅黑", Verdana, Helvetica, Sans-Serif
+}
+.jee,
+.jee1,
+.jee2{
+    margin-left: 37px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+.code-money {
+    font-weight: 600;
+    font-size: 18px;
+}
