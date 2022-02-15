@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <script type="text/javascript" src="js/common.js"></script>
+    <script tyep="text/javascript" src="js/echarts.js"></script>
+    <script type="text/javascript" src="js/data.json"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<style>
+    *{
+        margin:0;
+    }
+    div{
+        box-sizing: border-box;
+    }
+    .movie{
+        width:1200px;
+        border:solid 1px #999;
+        margin:50px auto 0;
+        padding:20px 20px 80px;
+        position: relative;
+    }
+    .movie .title{
+        width:100%;height: 80px;
+    }
+    .movie .title .title1{
+        height:20px;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom:16px;
+    }
+    .movie .title .title2{
+        height:20px;
+        color:#aaa;
+        font-size: 16px;
+        display: flex;
+    }
+    .movie .content{
+        text-align: center;
+    }
+    .movie .content .col{
+        display: inline-block;
+        width:50px;height: 50px;
+        background-image: url(../images/01.png);
+        transition: 0.5s;
+    }
+    .movie .bottom{
+        width:100%;height:60px;
+        background-color: #ffa500;
+        position: absolute;
+        bottom:0;left:0;
+        line-height: 60px;
+        display: flex;
+    }
+    .movie .bottom .bottomLeft{
+        width:960px;height:inherit;
+        text-indent: 10px;
+    }
+    .movie .bottom .bottomLeft span{
+        color:#fff;
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    .movie .bottom .bottomRight{
+        width:240px;height: inherit;
+        background-color: #3385ff;
+        font-size: 40px;
+        color:#ff0;
+        text-align: center;
+    }
+</style>
+<body>
+
+<div class="movie">
+    <div class="title">
+        <div class="title1"></div>
+        <div class="title2">
+            <div class="title21"></div>
+            <div class="title22"></div>
+            <div class="title23"></div>
+        </div>
+    </div>
+    <div class="content"></div>
+    <div class="bottom">
+        <div class="bottomLeft"></div>
+        <div class="bottomRight">￥<span class="price">0.00</span></div>
+    </div>
+</div>
+
+<script>
+    // 生成标题
+    $(".title1").textContent=movie.name;
+    $(".title21").textContent=movie.room;
+    $(".title22").textContent=movie.date;
+    $(".title23").textContent=movie.time;
+
+    // 生成座位
+    movie.seat.forEach((seat,index)=>{
+        // 生成行
+        let rowNode=create("div","row")
+        let del1=rowNode.dataset.rows=index+1
+        // 生成列
+        for(let i=0;i<seat;i++){
+            let colNode=create("span","col");
+            let del2=colNode.dataset.cols=i+1;
+            colNode.dataset.dels=`${del1}${del2}`
+            colNode.dataset.check="0"//0就是没有选中，1就是选中了
+            rowNode.append(colNode)
+        }
+
+        $(".content").append(rowNode)
+    })
+    let count=0;
+    const max=5;
+    // 单击事件
+    $(".content").addEventListener("click",function(){
+        if (event.target.className==="col") {
+            if (event.target.dataset.check==="0") {
+                count++;
+                if (count>5) {
+                    count=5;
+                    window.alert("您最多购买5张电影票")
+                }else{
+                    event.target.style.backgroundPosition="-50px 0";
+                    event.target.dataset.check="1";
+                    // 选的座位
+                    let rows=event.target.parentElement.dataset.rows;
+                    let cols=event.target.dataset.cols;
+                    let leftCon=create("span","con");
+                    leftCon.dataset.del=event.target.dataset.dels;
+                    leftCon.textContent=`${rows}排${cols}座`;
+                    $(".bottomLeft").append(leftCon)
+                }
+            }else{
+                event.target.style.backgroundPosition="0 0";
+                event.target.dataset.check="0";
+                let spans=$$(".bottomLeft .con");
+                for(let i=0;i<spans.length;i++){
+                    if (spans[i].dataset.del===event.target.dataset.dels) {
+                        $(".bottomLeft").removeChild(spans[i])
+                    }
+                }
+                count--;
+            }
+            // 生成价格
+            $(".price").textContent=(count*movie.price).toFixed(2)
+        }
+    })
+
+    let movie={
+        "name":"这个杀手",
+        "room":"2号厅",
+        "date":"2021年11月6号",
+        "time":"10:30",
+        "seat":[10,12,14,16,18,16,16,16,16,16],
+        "price":19.8
+    }
+</script>
+</body>
+</html>

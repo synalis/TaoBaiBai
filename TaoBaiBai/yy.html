@@ -1,0 +1,3186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/common.css">
+    <!--    引入初始化样式文件-->
+    <link rel="stylesheet" href="css/base.css">
+    <!--    favicon图标-->
+    <link rel="shortcut icon" href="upload/favicon.ico">
+    <link rel="stylesheet" href="css/yp.css">
+    <title>影院</title>
+</head>
+<script src="js/jquery.min.js"></script>
+<body style="position: relative">
+<!--<img src="images/angel.gif" alt="" style="position:absolute; z-index: -1" class="angle">-->
+<!--固定头部模块-->
+<section class="getTop">
+    <div class="w">
+        <div class="fl">
+            <ul>
+                <li><div><a href="login.html" class="style_red">亲，请登录</a></div></li>
+                <li><div><a href="registe.html">免费注册</a></div></li>
+            </ul>
+        </div>
+        <div class="fr">
+            <ul>
+                <ul>
+                    <li>
+                        <a href="index.html"  class="style_red">淘百百首页</a>
+                    </li>
+                    <li class="xiang"></li>
+                    <li class="arrow_icon">
+                        <a href="javascript:">网站导航</a>
+                        <ul class="xia">
+                            <li>
+                                <a href="index.html" style="pointer-events:auto;">  首 页  </a>
+                            </li>
+                            <li>
+                                <a href="yp.html">选 择 影 片</a>
+                            </li>
+                            <li>
+                                <a href="yy.html">选 择 影 院</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--header头部模块-->
+<header class="header w">
+    <!--search搜索模块-->
+    <div class="search">
+        <input type="search" placeholder="反贪风暴5·最终章" class="sr">
+        <button class="ss">搜索</button>
+    </div>
+    <!--hotwords模块-->
+    <div class="hotwords">
+        <a href="#" class="style_red">黑客帝国</a>
+        <a href="#">李茂扮太子</a>
+        <a href="#">穿过寒冬拥抱你</a>
+        <a href="#">汪汪队立大功</a>
+        <a href="#">魔法满屋子</a>
+    </div>
+</header>
+<!--chose选项模块-->
+<div class="choser">
+    <div class="chose w">
+        <!--logo模块-->
+        <div class="logo">
+            <h1><a href="index.html" title="淘百百商城">淘百百商场</a></h1>
+        </div>
+        <div class="cityWrap">
+            <a href="javascript:" class="city">
+                <span>广州</span>
+            </a>
+        </div>
+        <!--    nav模块-->
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="yp.html">影片</a></li>
+                <li><a href="yy.html" class="current">影院</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="yypp">
+    <div class="w">
+        <div class="path">
+            <a href="index.html">首页</a>
+            >
+            <a href="yp.html">影片</a>
+            >
+            <a href="javascript:">广州</a>
+        </div>
+        <div class="step">
+            <span>3步轻松购票:1.选座购票</span>
+            <i></i>
+            <span>2.收电子码</span>
+            <i></i>
+            <span>3.影院取票</span>
+        </div>
+    </div>
+</div>
+<!--影片影院模块-->
+<div class="center-wrap w">
+    <div class="left-wrap f" >
+        <div class="filter-select" style="border-bottom: 2px solid #d21438">
+            <div class="filter-select-left">
+                <span >选择区域</span>
+                <span>搜索</span>
+            </div>
+            <ul class="select-tags">
+                <li><a href="javascript:" class="current">全部区域</a></li>
+                <li><a href="javascript:">白云区</a></li>
+                <li><a href="javascript:">从化区</a></li>
+                <li><a href="javascript:">番禺区</a></li>
+                <li><a href="javascript:">海珠区</a></li>
+                <li><a href="javascript:">花都区</a></li>
+                <li><a href="javascript:">黄浦区</a></li>
+                <li><a href="javascript:">荔湾区</a></li>
+                <li><a href="javascript:">萝岗区</a></li>
+                <li><a href="javascript:">南沙区</a></li>
+                <li><a href="javascript:">天河区</a></li>
+                <li><a href="javascript:">越秀区</a></li>
+                <li><a href="javascript:" class="select-show">更多</a></li>
+            </ul>
+                    <div class="search-wrap">
+                        <input placeholder="请输入影院名称/关键字" class="search-input" type="text" value="">
+                        <a href="javascript:" class="search-btn">
+                            <i class="icon-search"></i>查询
+                        </a>
+                    </div>
+        </div>
+        <div class="list-sort">
+            排序:
+            <a href="javascript:" class="active">综合</a>
+<!--            <a href="javascript:">评分-->
+<!--            <i class="jt-down"></i></a>-->
+            当前条件下共有 <span class="count">5</span>家影院
+        </div>
+        <ul class="sort-bar">
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy1.png" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="#">华影万晟国际影城</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>荔湾区逢源路153号（近西关永庆坊旅游区）</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-81236302</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>9.3</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>华影万晟国际影城</span>
+                    <span>地址:荔湾区逢源路153号（近西关永庆坊旅游区）</span>
+                    <span>电话:020-81236302</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">华影万晟国际影城</span>
+                    <span class="bt-r">9.3</span>
+                    <i style="display: none" class="bt-i">150.3</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy2.png" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">金逸影城(黄埔惠润店)</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>黄埔区黄埔东路298号惠润广场四层</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-82519714</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>9.2</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>金逸影城(黄埔惠润店)</span>
+                    <span>地址:黄埔区黄埔东路298号惠润广场四层</span>
+                    <span>电话:020-82519714</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">金逸影城(黄埔惠润店)</span>
+                    <span class="bt-r">9.2</span>
+                    <i style="display: none" class="bt-i">148.3</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy3.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">广州中影国际影城（太阳新天地店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>天河区马场路36号8楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>18027384055</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>9.2</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>广州中影国际影城（太阳新天地店）</span>
+                    <span>地址:天河区马场路36号8楼</span>
+                    <span>电话:18027384055</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">广州中影国际影城（太阳新天地店）</span>
+                    <span class="bt-r">9.2</span>
+                    <i style="display: none" class="bt-i">146.3</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy4.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">金逸影城(和业店)</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>荔湾区康王中路486号和业广场4楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-81236080</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.8</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>金逸影城(和业店)</span>
+                    <span>地址:荔湾区康王中路486号和业广场4楼</span>
+                    <span>电话:020-81236080</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">金逸影城(和业店)</span>
+                    <span class="bt-r">8.8</span>
+                    <i style="display: none" class="bt-i">134.7</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy5.jfif" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">橙天嘉禾影城（广州五号停机坪店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>白云区白云新城机场路云霄路五号停机坪</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-36077783</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.6</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>橙天嘉禾影城（广州五号停机坪店）</span>
+                    <span>地址:白云区白云新城机场路云霄路五号停机坪</span>
+                    <span>电话:020-36077783</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">橙天嘉禾影城（广州五号停机坪店）</span>
+                    <span class="bt-r">8.6</span>
+                    <i style="display: none" class="bt-i">126.7</i>
+                </div>
+            </li>
+        </ul>
+        <ul class="sort-bar GG">
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy5.jfif" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">橙天嘉禾影城（广州五号停机坪店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>白云区白云新城机场路云霄路五号停机坪</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-36077783</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.6</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>橙天嘉禾影城（广州五号停机坪店）</span>
+                    <span>地址:白云区白云新城机场路云霄路五号停机坪</span>
+                    <span>电话:020-36077783</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">橙天嘉禾影城（广州五号停机坪店）</span>
+                    <span class="bt-r">8.6</span>
+                    <i style="display: none" class="bt-i">126.7</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy6.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="#">广州华影梅花园影城</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>白云区广州大道北28号梅花园商业广场5楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-37322088</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.4</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>广州华影梅花园影城</span>
+                    <span>地址:白云区广州大道北28号梅花园商业广场5楼</span>
+                    <span>电话:020-37322088</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">广州华影梅花园影城</span>
+                    <span class="bt-r">8.4</span>
+                    <i style="display: none" class="bt-i">141.3</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy7.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">金逸影城(太阳城IMAX店)</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>白云区广州大道北1811号嘉裕太阳城广场3楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-36732001</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.2</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>金逸影城(太阳城IMAX店)</span>
+                    <span>地址:白云区广州大道北1811号嘉裕太阳城广场3楼</span>
+                    <span>电话:020-36732001</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">金逸影城(黄埔惠润店)</span>
+                    <span class="bt-r">8.2</span>
+                    <i style="display: none" class="bt-i">134.7</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy8.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">粤骏电影城广州店</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>白云区棠景街沙涌北大街18号新乐嘉商业广场A1区二楼02铺</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-31231364</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.0</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>粤骏电影城广州店</span>
+                    <span>地址:白云区棠景街沙涌北大街18号新乐嘉商业广场A1区二楼02铺</span>
+                    <span>电话:020-31231364</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">粤骏电影城广州店</span>
+                    <span class="bt-r">8.0</span>
+                    <i style="display: none" class="bt-i">135.6</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy9.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">横店电影城（庆丰店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>白云区庆丰广场路财智广场3楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-36372066</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.0</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>横店电影城（庆丰店）</span>
+                    <span>地址:白云区庆丰广场路财智广场3楼</span>
+                    <span>电话:020-36372066</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">横店电影城（庆丰店）</span>
+                    <span class="bt-r">8.0</span>
+                    <i style="display: none" class="bt-i">127.9</i>
+                </div>
+            </li>
+        </ul>
+        <ul class="sort-bar GG">
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy10.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="#">百德新光影城</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>从化区太平镇经济开发区高技术产业园福从路2号301</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-37504488</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.0</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>百德新光影城</span>
+                    <span>地址:从化区太平镇经济开发区高技术产业园福从路2号301</span>
+                    <span>电话:020-37504488</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">百德新光影城</span>
+                    <span class="bt-r">8.0</span>
+                    <i style="display: none" class="bt-i">116.7</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy11.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">从化影天下国际影城</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>从化区从城大道欣荣宏国际商贸城三楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-37937666</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.0</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>从化影天下国际影城</span>
+                    <span>地址:从化区从城大道欣荣宏国际商贸城三楼</span>
+                    <span>电话:020-37937666</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">从化影天下国际影城</span>
+                    <span class="bt-r">8.0</span>
+                    <i style="display: none" class="bt-i">123.4</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy12.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">诚丰影城从化店</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>从化区江埔街河东南路红荔新村16幢</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-28179891</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.0</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>诚丰影城从化店</span>
+                    <span>地址:从化区江埔街河东南路红荔新村16幢</span>
+                    <span>电话:020-28179891</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">诚丰影城从化店</span>
+                    <span class="bt-r">8.0</span>
+                    <i style="display: none" class="bt-i">119.6</i>
+                </div>
+            </li>
+        </ul>
+        <ul class="sort-bar GG">
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy13.png" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="#">佳影国际影城（沙溪激光巨幕店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>番禺区丽江明珠酒店旁8号4楼（地铁18号线沙溪站E1出口）</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-34838998</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.3</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>佳影国际影城（沙溪激光巨幕店）</span>
+                    <span>地址:番禺区丽江明珠酒店旁8号4楼（地铁18号线沙溪站E1出口）</span>
+                    <span>电话:020-34838998</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">佳影国际影城（沙溪激光巨幕店）</span>
+                    <span class="bt-r">8.3</span>
+                    <i style="display: none" class="bt-i">146.9</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy14.png" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">金逸影城（光美沙湾IMAX店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>番禺区沙湾镇西环路1502号荔园新天地3楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-34838998</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.5</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>金逸影城（光美沙湾IMAX店）</span>
+                    <span>地址:番禺区沙湾镇西环路1502号荔园新天地3楼</span>
+                    <span>电话:020-34838998</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">金逸影城（光美沙湾IMAX店）</span>
+                    <span class="bt-r">8.5</span>
+                    <i style="display: none" class="bt-i">136.1</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy15.png" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">万达影城（番禺万达广场IMAX店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>番禺区南村镇汉溪大道东381号番禺万达广场4层</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-31007598</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>9.2</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>万达影城（番禺万达广场IMAX店）</span>
+                    <span>地址:番禺区南村镇汉溪大道东381号番禺万达广场4层</span>
+                    <span>电话:020-31007598</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">万达影城（番禺万达广场IMAX店）</span>
+                    <span class="bt-r">8.5</span>
+                    <i style="display: none" class="bt-i">138.6</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy16.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">烽禾影城（南村剑桥郡店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>番禺区南村镇雅居乐剑桥郡国际文化中心4楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>400-6510086</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.0</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>烽禾影城（南村剑桥郡店）</span>
+                    <span>地址:番禺区南村镇雅居乐剑桥郡国际文化中心4楼</span>
+                    <span>电话:400-6510086</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">烽禾影城（南村剑桥郡店）</span>
+                    <span class="bt-r">8.0</span>
+                    <i style="display: none" class="bt-i">122.2</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy17.png" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">中影佰纳国际影城（番禺DMAX店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>番禺区大石街105国道561号万盛广场北门</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-31561553</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.3</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>中影佰纳国际影城（番禺DMAX店）</span>
+                    <span>地址:番禺区大石街105国道561号万盛广场北门</span>
+                    <span>电话:020-31561553</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">中影佰纳国际影城（番禺DMAX店）</span>
+                    <span class="bt-r">8.3</span>
+                    <i style="display: none" class="bt-i">130.2</i>
+                </div>
+            </li>
+        </ul>
+        <ul class="sort-bar GG">
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy18.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="#">中影德金影城（客村丽影店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>海珠区新港中路356号丽影广场B区5楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-89309483</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>9.3</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>中影德金影城（客村丽影店）</span>
+                    <span>地址:海珠区新港中路356号丽影广场B区5楼</span>
+                    <span>电话:020-89309483</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">中影德金影城（客村丽影店）</span>
+                    <span class="bt-r">8.1</span>
+                    <i style="display: none" class="bt-i">120.3</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy19.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">金逸空中影城</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>海珠区阅江西路222号广州塔B功能区（17-22楼）</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-89996086</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.8</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>金逸空中影城</span>
+                    <span>地址:海珠区阅江西路222号广州塔B功能区（17-22楼）</span>
+                    <span>电话:020-89996086</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">金逸空中影城</span>
+                    <span class="bt-r">8.8</span>
+                    <i style="display: none" class="bt-i">139.6</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy20.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">万达影城（万胜围IMAX店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>海珠区新港东路1236号万胜广场五层</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-89305210</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.2</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>万达影城（万胜围IMAX店）</span>
+                    <span>地址:海珠区新港东路1236号万胜广场五层</span>
+                    <span>电话:020-89305210</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">万达影城（万胜围IMAX店）</span>
+                    <span class="bt-r">8.2</span>
+                    <i style="display: none" class="bt-i">124.6</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy21.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">广州Wone喜航影城(海珠万科里店)</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>海珠区江燕路99号201室</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-89636679</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>7.9</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>广州Wone喜航影城(海珠万科里店)</span>
+                    <span>地址:海珠区江燕路99号201室</span>
+                    <span>电话:020-89636679</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">广州Wone喜航影城(海珠万科里店)</span>
+                    <span class="bt-r">7.9</span>
+                    <i style="display: none" class="bt-i">121.6</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy22.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">飞扬影城IMAX激光乐峰店</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>海珠区工业大道北106-108号楼乐峰广场2楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-89303919</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.6</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>飞扬影城IMAX激光乐峰店</span>
+                    <span>地址:海珠区工业大道北106-108号楼乐峰广场2楼</span>
+                    <span>电话:020-89303919</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">飞扬影城IMAX激光乐峰店</span>
+                    <span class="bt-r">8.0</span>
+                    <i style="display: none" class="bt-i">123.2</i>
+                </div>
+            </li>
+        </ul>
+        <ul class="sort-bar GG">
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy23.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="#">自由人影城（广州花都自由里店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>花都区自由人花园二街3号124铺</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-36999925</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.5</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>自由人影城（广州花都自由里店）</span>
+                    <span>地址:花都区自由人花园二街3号124铺</span>
+                    <span>电话:020-36999925</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">自由人影城（广州花都自由里店）</span>
+                    <span class="bt-r">8.5</span>
+                    <i style="display: none" class="bt-i">130.3</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy24.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">品纳国际影城</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>花都区风神大道花都汽车城地铁站B出口</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-86874734</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.4</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>品纳国际影城</span>
+                    <span>地址:花都区风神大道花都汽车城地铁站B出口</span>
+                    <span>电话:020-86874734</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">品纳国际影城</span>
+                    <span class="bt-r">8.4</span>
+                    <i style="display: none" class="bt-i">134.4</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy25.png" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">博纳院线影城·雅乐城LUXE店</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>花都区秀全街永发路14号花都雅乐城四楼博纳院线影城</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-86888282</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.5</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>博纳院线影城·雅乐城LUXE店</span>
+                    <span>地址:花都区秀全街永发路14号花都雅乐城四楼博纳院线影城</span>
+                    <span>电话:020-86888282</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">博纳院线影城·雅乐城LUXE店</span>
+                    <span class="bt-r">8.5</span>
+                    <i style="display: none" class="bt-i">146.5</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy26.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">麦希影城（骏壹万邦店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>花都区曙光路81号四层4101</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-86886000</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.2</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>麦希影城（骏壹万邦店）</span>
+                    <span>地址:花都区曙光路81号四层4101</span>
+                    <span>电话:020-86886000</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">麦希影城（骏壹万邦店）</span>
+                    <span class="bt-r">8.2</span>
+                    <i style="display: none" class="bt-i">126.5</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy27.jfif" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">中影佰纳国际影城（花都广百新一城店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>花都区新华街龙珠路41号凤凰广场A区广百5楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-36811108</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.1</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>中影佰纳国际影城（花都广百新一城店）</span>
+                    <span>地址:花都区新华街龙珠路41号凤凰广场A区广百5楼</span>
+                    <span>电话:020-36811108</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">中影佰纳国际影城（花都广百新一城店）</span>
+                    <span class="bt-r">8.1</span>
+                    <i style="display: none" class="bt-i">120.9</i>
+                </div>
+            </li>
+        </ul>
+        <ul class="sort-bar GG">
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy28.png" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="#">金逸影城(黄埔惠润店)</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>黄埔区黄埔东路298号惠润广场四层</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-82519714</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>9.2</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>金逸影城(黄埔惠润店)</span>
+                    <span>地址:黄埔区黄埔东路298号惠润广场四层</span>
+                    <span>电话:020-82519714</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">金逸影城(黄埔惠润店)</span>
+                    <span class="bt-r">9.2</span>
+                    <i style="display: none" class="bt-i">150.6</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy29.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">沃美影城广州万科店</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>黄埔区南岗翠宇七街5号尚城万科里广场4楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-22002296</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.8</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>沃美影城广州万科店</span>
+                    <span>地址:黄埔区南岗翠宇七街5号尚城万科里广场4楼</span>
+                    <span>电话:020-22002296</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">沃美影城广州万科店</span>
+                    <span class="bt-r">8.8</span>
+                    <i style="display: none" class="bt-i">136.4</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy30.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">金逸院线汇赢影城</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>黄埔区经济开发区东区宏光路123号汇赢广场3楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-32076588</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.6</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>金逸院线汇赢影城</span>
+                    <span>地址:020-32076588</span>
+                    <span>电话:18027384055</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">金逸院线汇赢影城</span>
+                    <span class="bt-r">8.6</span>
+                    <i style="display: none" class="bt-i">127.4</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy31.png" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">万达影城（永和里享家XLAND店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>黄埔区新业路25号自编S1栋万科里享家二楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-32859140</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.3</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>万达影城（永和里享家XLAND店）</span>
+                    <span>地址:黄埔区新业路25号自编S1栋万科里享家二楼</span>
+                    <span>电话:020-32859140</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">万达影城（永和里享家XLAND店</span>
+                    <span class="bt-r">8.3</span>
+                    <i style="display: none" class="bt-i">126.7</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy32.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">大地影院（广州东区时代城店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>黄埔区宏明路荔联街263号东区时代城4楼4-A05、A-10号商铺</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-82020253</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.0</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>大地影院（广州东区时代城店）</span>
+                    <span>地址:黄埔区宏明路荔联街263号东区时代城4楼4-A05、A-10号商铺</span>
+                    <span>电话:020-82020253</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">大地影院（广州东区时代城店）</span>
+                    <span class="bt-r">8.0</span>
+                    <i style="display: none" class="bt-i">116.8</i>
+                </div>
+            </li>
+        </ul>
+        <ul class="sort-bar GG">
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy1.png" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="#">华影万晟国际影城</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>荔湾区逢源路153号（近西关永庆坊旅游区）</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-81236302</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>9.3</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>华影万晟国际影城</span>
+                    <span>地址:荔湾区逢源路153号（近西关永庆坊旅游区）</span>
+                    <span>电话:020-81236302</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">华影万晟国际影城</span>
+                    <span class="bt-r">9.3</span>
+                    <i style="display: none" class="bt-i">150.3</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy4.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">金逸影城(和业店)</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>荔湾区康王中路486号和业广场4楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-81236080</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.8</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>金逸影城(和业店)</span>
+                    <span>地址:荔湾区康王中路486号和业广场4楼</span>
+                    <span>电话:020-81236080</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">金逸影城(和业店)</span>
+                    <span class="bt-r">8.8</span>
+                    <i style="display: none" class="bt-i">134.7</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy33.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">新影汇国际影院</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>荔湾区花地大道中228号奔富广场首层（地铁1号线坑口站B出口转右直走200米）</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-86536143</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.5</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>新影汇国际影院</span>
+                    <span>地址:荔湾区花地大道中228号奔富广场首层（地铁1号线坑口站B出口转右直走200米）</span>
+                    <span>电话:020-86536143</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">新影汇国际影院</span>
+                    <span class="bt-r">8.5</span>
+                    <i style="display: none" class="bt-i">130.6</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy34.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">未来欢乐汇影城</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>荔湾区广钢新城锦御三街1号三层</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-36998765</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.0</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>未来欢乐汇影城</span>
+                    <span>地址:荔湾区广钢新城锦御三街1号三层</span>
+                    <span>电话:020-36998765</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">未来欢乐汇影城</span>
+                    <span class="bt-r">8.0</span>
+                    <i style="display: none" class="bt-i">126.4</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy35.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">广州YES梦想红石影城（中国巨幕CGS荔湾店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>荔湾区荔湾路97号动感小西关内（地铁陈家祠站D口步行550米）</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-81977818</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.3</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>广州YES梦想红石影城（中国巨幕CGS荔湾店）</span>
+                    <span>地址:荔湾区荔湾路97号动感小西关内（地铁陈家祠站D口步行550米）</span>
+                    <span>电话:020-81977818</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">广州YES梦想红石影城（中国巨幕CGS荔湾店）</span>
+                    <span class="bt-r">8.3</span>
+                    <i style="display: none" class="bt-i">129.6</i>
+                </div>
+            </li>
+        </ul>
+        <ul class="sort-bar GG">
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy36.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="#">左岸国际影城(萝岗店)</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>萝岗区开创大道3327号东方汇4楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-61790371</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.7</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>左岸国际影城(萝岗店)</span>
+                    <span>地址:萝岗区开创大道3327号东方汇4楼</span>
+                    <span>电话:020-61790371</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">左岸国际影城(萝岗店)</span>
+                    <span class="bt-r">8.7</span>
+                    <i style="display: none" class="bt-i">140.1</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy37.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">烽禾影城（萝岗科学城店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>萝岗区科学大道193号高德汇购物中心五楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>400-6510086</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.3</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>烽禾影城（萝岗科学城店）</span>
+                    <span>地址:萝岗区科学大道193号高德汇购物中心五楼</span>
+                    <span>电话:400-6510086</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">烽禾影城（萝岗科学城店）</span>
+                    <span class="bt-r">8.3</span>
+                    <i style="display: none" class="bt-i">134.3</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy38.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">万达影城（萝岗万达广场IMAX店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>萝岗区科丰路89号萝岗万达广场娱乐楼四层</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-29097668</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.0</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>万达影城（萝岗万达广场IMAX店）</span>
+                    <span>地址:萝岗区科丰路89号萝岗万达广场娱乐楼四层</span>
+                    <span>电话:020-29097668</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">万达影城（萝岗万达广场IMAX店）</span>
+                    <span class="bt-r">8.0</span>
+                    <i style="display: none" class="bt-i">119.3</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy39.png" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">佳影国际影城（香雪锐丰中心激光巨幕店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>萝岗区锐丰中心5栋三楼（地铁6号线香雪站F出口）</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-81558839</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.0</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>佳影国际影城（香雪锐丰中心激光巨幕店）</span>
+                    <span>地址:萝岗区锐丰中心5栋三楼（地铁6号线香雪站F出口）</span>
+                    <span>电话:020-81558839</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">佳影国际影城（香雪锐丰中心激光巨幕店）</span>
+                    <span class="bt-r">8.0</span>
+                    <i style="display: none" class="bt-i">120.7</i>
+                </div>
+            </li>
+        </ul>
+        <ul class="sort-bar GG">
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy40.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="#">横店电影城（南沙店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>南沙区奥园海景城中环广场四楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-39033118</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.4</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>横店电影城（南沙店）</span>
+                    <span>地址:南沙区奥园海景城中环广场四楼</span>
+                    <span>电话:020-39033118</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">横店电影城（南沙店）</span>
+                    <span class="bt-r">8.4</span>
+                    <i style="display: none" class="bt-i">139.3</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy41.png" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">中影百森国际影城(今洲广场店)</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>南沙区进港大道今洲新天地广场3楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-39009319</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.8</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>中影百森国际影城(今洲广场店)</span>
+                    <span>地址:南沙区进港大道今洲新天地广场3楼</span>
+                    <span>电话:020-39009319</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">中影百森国际影城(今洲广场店)</span>
+                    <span class="bt-r">8.2</span>
+                    <i style="display: none" class="bt-i">134.2</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy42.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">万达影城（南沙万达广场IMAX店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>南沙区双山大道三号娱乐楼4楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-39012032</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.1</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>万达影城（南沙万达广场IMAX店）</span>
+                    <span>地址:南沙区双山大道三号娱乐楼4楼</span>
+                    <span>电话:020-39012032</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">万达影城（南沙万达广场IMAX店）</span>
+                    <span class="bt-r">8.1</span>
+                    <i style="display: none" class="bt-i">126.9</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy43.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">广州思哲国际影城（大岗店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>南沙区大岗镇兴业路96号阳光城市广场一号楼4楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-34938828</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.5</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>广州思哲国际影城（大岗店）</span>
+                    <span>地址:南沙区大岗镇兴业路96号阳光城市广场一号楼4楼</span>
+                    <span>电话:020-34938828</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">广州思哲国际影城（大岗店）</span>
+                    <span class="bt-r">8.5</span>
+                    <i style="display: none" class="bt-i">136.9</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy44.png" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">Kbro Cinemas凯擘影城(南沙店)</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>南沙区叠翠峰悠方商场（区政府斜后方）</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-84682776</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.3</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>Kbro Cinemas凯擘影城(南沙店)</span>
+                    <span>地址:南沙区叠翠峰悠方商场（区政府斜后方）</span>
+                    <span>电话:020-84682776</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">Kbro Cinemas凯擘影城(南沙店)</span>
+                    <span class="bt-r">8.3</span>
+                    <i style="display: none" class="bt-i">129.6</i>
+                </div>
+            </li>
+        </ul>
+        <ul class="sort-bar GG">
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy3.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">广州中影国际影城（太阳新天地店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>天河区马场路36号8楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>18027384055</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>9.2</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>广州中影国际影城（太阳新天地店）</span>
+                    <span>地址:天河区马场路36号8楼</span>
+                    <span>电话:18027384055</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">广州中影国际影城（太阳新天地店）</span>
+                    <span class="bt-r">9.2</span>
+                    <i style="display: none" class="bt-i">146.3</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy45.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="#">中影佰纳飞影电影城（天河店）</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>天河区东莞庄路富力院士庭广场2楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-37225388</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.5</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>中影佰纳飞影电影城（天河店）</span>
+                    <span>地址:天河区东莞庄路富力院士庭广场2楼</span>
+                    <span>电话:020-37225388</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">中影佰纳飞影电影城（天河店）</span>
+                    <span class="bt-r">8.5</span>
+                    <i style="display: none" class="bt-i">142.6</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy46.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">金逸影城(维家思店)</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>天河区黄埔大道西188号维家思广场3楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-87598889</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.5</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>金逸影城(维家思店)</span>
+                    <span>地址:天河区黄埔大道西188号维家思广场3楼</span>
+                    <span>电话:020-87598889</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">金逸影城(维家思店)</span>
+                    <span class="bt-r">8.5</span>
+                    <i style="display: none" class="bt-i">128.1</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy47.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">博纳UA IMAX花城汇电影城</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>天河区广州市天河区黄埔大道西74号花城汇负一层1130-1132号铺</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-38325190</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.2</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>博纳UA IMAX花城汇电影城</span>
+                    <span>地址:天河区广州市天河区黄埔大道西74号花城汇负一层1130-1132号铺</span>
+                    <span>电话:020-38325190</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">博纳UA IMAX花城汇电影城</span>
+                    <span class="bt-r">8.2</span>
+                    <i style="display: none" class="bt-i">131.6</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy48.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">广州飞扬影城-高德店</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>天河区珠江东路14号高德置地冬广场5楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-38619080</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.0</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>广州飞扬影城-高德店</span>
+                    <span>地址:天河区珠江东路14号高德置地冬广场5楼</span>
+                    <span>电话:020-38619080</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">广州飞扬影城-高德店</span>
+                    <span class="bt-r">8.0</span>
+                    <i style="display: none" class="bt-i">120.7</i>
+                </div>
+            </li>
+        </ul>
+        <ul class="sort-bar GG">
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy49.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="#">中华广场电影城</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>越秀区中山三路33号中华广场8楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-83739491</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.3</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>中华广场电影城</span>
+                    <span>地址:越秀区中山三路33号中华广场8楼</span>
+                    <span>电话:020-83739491</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">中华广场电影城</span>
+                    <span class="bt-r">8.3</span>
+                    <i style="display: none" class="bt-i">130.3</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy50.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">广州电影院</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>越秀区沿江西路65号</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-81914312</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.2</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>广州电影院</span>
+                    <span>地址:越秀区沿江西路65号</span>
+                    <span>电话:020-81914312</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">广州电影院</span>
+                    <span class="bt-r">8.2</span>
+                    <i style="display: none" class="bt-i">126.9</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy51.png" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">中影南方国际影城流花店</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>越秀区流花路117号流花展贸中心1号馆四层全层（原广交会展馆，地铁2号线越秀公园站C出口150米）</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-83523083</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.0</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>中影南方国际影城流花店</span>
+                    <span>地址:越秀区流花路117号流花展贸中心1号馆四层全层（原广交会展馆，地铁2号线越秀公园站C出口150米）</span>
+                    <span>电话:020-83523083</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">中影南方国际影城流花店</span>
+                    <span class="bt-r">8.0</span>
+                    <i style="display: none" class="bt-i">120.3</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy52.jpg" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">永汉电影院</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>越秀区北京路186号3楼</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-83330721</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.0</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>永汉电影院</span>
+                    <span>地址:越秀区北京路186号3楼</span>
+                    <span>电话:020-83330721</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">永汉电影院</span>
+                    <span class="bt-r">8.0</span>
+                    <i style="display: none" class="bt-i">120.7</i>
+                </div>
+            </li>
+            <li class="sort-bar-li">
+                <a href="javascript:" class="detail-left">
+                    <div class="ss1">
+                        <img src="upload/yy53.png" alt="">
+                    </div>
+                </a>
+                <div class="detail-middle">
+                    <div class="middle-hd">
+                        <h4>
+                            <a href="javascript:">广州星汇电影城</a>
+                        </h4>
+                    </div>
+                    <div class="middle-p">
+                        <div class="middle-p-list">
+                            <i>地址:</i>
+                            <span>越秀区西湖路63号光明广场7楼（北京路广百南门对面）</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>电话:</i>
+                            <span>020-83312222</span>
+                        </div>
+                        <div class="middle-p-list">
+                            <i>更多:</i>
+                            <a href="javascript:">影院服务</a>
+                            <a href="javascript:">交通信息</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="right-score">
+                        评分:
+                        <strong>8.0</strong>
+                    </div>
+                    <div class="right-fav">
+
+                    </div>
+                    <div class="right-buy">
+                        <a href="javascript:">选座</a>
+                    </div>
+                </div>
+                <div class="movie_card_list" style="display: none">
+                    <span>广州星汇电影城</span>
+                    <span>地址:越秀区西湖路63号光明广场7楼（北京路广百南门对面）</span>
+                    <span>电话:020-83312222</span>
+                </div>
+                <div class="movie_card_name overflow-hidden" style="display:none;">
+                    <span class="bt-l">广州星汇电影城</span>
+                    <span class="bt-r">8.0</span>
+                    <i style="display: none" class="bt-i">123.5</i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="right-wrap f">
+        <div class="phb">
+            <div>
+                <h5>
+                    <span>热销团购券</span>
+                    <a href="javascript:">查看全部 ></a>
+                </h5>
+                <ul>
+                    <li class="cry-wrap" style="height: 270px">
+                        <div>暂无团购信息</div>你可以查看
+                        <a href="yy.html" style="color:#eb002a;">全部影院</a> 或者
+                        <a href="yp.html" style="color:#eb002a;">全部影片</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--底部模块-->
+<footer class="footer">
+    <div class="w">
+        <div class="mod_service">
+            <ul>
+                <li>
+                    <h5></h5>
+                </li>
+
+            </ul>
+        </div>
+        <div class="mod_help">
+            <dl>
+                <dt>淘百百</dt>
+                <dd><a href="#">如 果 你 是 消 费 者</a></dd>
+                <dd><a href="#">请 拨 打 0000-00000000</a></dd>
+                <dd><a href="#">如 果 你 是 影 院 / 合 作 商 家</a></dd>
+                <dd><a href="#">请 拨 打 000-000-0000</a></dd>
+                <dd><a href="#">( 服 务 时 间 : 9:00-21:00 )</a></dd>
+            </dl>
+            <dl>
+                <dt>选座购票流程</dt>
+                <dd><a href="#">选择影片和场次</a></dd>
+                <dd><a href="#">选择中意的座位</a></dd>
+                <dd><a href="#">支付并收到取票短信</a></dd>
+            </dl>
+            <dl>
+                <dt>取票流程</dt>
+                <dd><a href="#">收到取票短信</a></dd>
+                <dd><a href="#">影院自助取票</a></dd>
+                <dd><a href="#">短信重发方式</a></dd>
+            </dl>
+            <dl>
+                <dt>常见问题</dt>
+                <dd><a href="#">是否支持退换票</a></dd>
+                <dd><a href="#">填错手机号怎么办</a></dd>
+                <dd><a href="#">更多问题</a></dd>
+            </dl>
+            <dl>
+                <dt>协议规范</dt>
+                <dd><a href="#">用户服务协议</a></dd>
+                <dd><a href="#">适配管理规范</a></dd>
+                <dd><a href="#">隐私权政策</a></dd>
+                <dd><a href="#">退改签服务费规范</a></dd>
+            </dl>
+            <dl>
+                <dt>帮助中心</dt>
+                <dd>
+                    <img src="images/wx_cz.jpg" alt="">
+                    淘百百客户端
+            </dl>
+        </div>
+        <div class="mod_copyright">
+            <div class="links">
+                <ul>
+                    <li><a href="#">关于我们</a></li>
+                    <li></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li></li>
+                    <li><a href="#">联系客服</a></li>
+                    <li></li>
+                    <li><a href="#">商家入驻</a></li>
+                    <li></li>
+                    <li><a href="#">营销中心</a></li>
+                    <li></li>
+                    <li><a href="#">手机淘百百</a></li>
+                    <li></li>
+                    <li><a href="#">友情链接</a></li>
+                    <li></li>
+                    <li><a href="#">销售联盟</a></li>
+                    <li></li>
+                    <li><a href="#">淘百百社区</a></li>
+                    <li></li>
+                    <li><a href="#">淘百百公益</a></li>
+                    <li></li>
+                    <li><a href="#">English Site</a></li>
+                    <li></li>
+                    <li><a href="#">Contact U</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                地址：广东省广州市从化区广州南方学院 邮编：100096 电话：000-000-0000 传真：000-00000000 邮箱: zhangjiahui1999@qq.com <br>
+                京ICP备08001421号京公网安备110108007702
+            </div>
+        </div>
+    </div>
+</footer>
+<!--引入公共js-->
+<script src="js/commom.js"></script>
+<script src="js/yy.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>仿支付宝收银台</title>
+    <link rel="stylesheet" href="css/zf.css">
+</head>
+<body>
+<div class="container">
+    <!------header------->
+    <header class="header bgc">
+        <div class="w">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./images/2.png" alt=""/>
+                </a>
+            </div>
+            <b>我的收银台</b>
+        </div>
+    </header>
+
+    <!------main------->
+    <section class="main bgc">
+        <div class="left">
+            <h2>支付方式</h2>
+            <ul>
+                <li class="zhifubao" onclick="showContent('zhifubao')">
+                    <img src="./images/zhifubao.png" alt="" style="width: 28%">支付宝
+                </li>
+                <li class="weixin" onclick="showContent('weixin')">
+                    <img src="./images/weixin.png" alt="" style="width: 28%">微信
+                </li>
+                <li class="yiwangtong" onclick="showContent('yiwangtong')">
+                    <img src="./images/yiwangtong.png" alt="" style="width: 28%">一网通
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="right-top">
+                <div class="top-left">
+                    <img src="upload/ry1.jpg" alt="">
+                </div>
+                <ul class="top-right">
+                    <li><span>收 费 项 目 ：虚 拟 物 品</span></li>
+                    <li><span>商 品 描 述 ：电 影 票</span></li>
+                    <li><span>购 买 张 数 ：<i class="zs"></i></span></li>
+                    <li><span>交 易 金 额 ：<i class="je"></i></span></li>
+                </ul>
+            </div>
+            <div class="right-bottom bgc">
+                <div id="alipay1" class="alipay">
+                    <div class="code-wrap">
+                        <div class="code-money">
+                            扫 一 扫 付 款 （ 元 ）
+                            <b class="jee"></b>
+                        </div>
+                        <div class="QRcode">
+                            <img src="./images/code.png" alt="">
+                            <div class="QRcode-desc">
+                                <div class="QRcode-desc-img">
+                                    <img src="./images/saosao1.png" style="width: 28%;" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tips"><a href="https://mobile.alipay.com/index.htm">首次使用请下载手机支付宝</a></div>
+                    </div>
+                    <div>
+                        <img src="./images/saosao.png" alt="">
+                    </div>
+                </div>
+                <div id="alipay2" class="alipay">
+                    <div class="code-wrap">
+                        <div class="code-money">
+                            扫 一 扫 付 款 （ 元 ）
+                            <b class="jee1"></b>
+                        </div>
+                        <div class="QRcode">
+                            <img src="./images/code1.jpg" alt="">
+                            <div class="QRcode-desc">
+                                <div class="QRcode-desc-img">
+                                    <img src="./images/saosao1.png" style="width: 28%;" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tips"><a href="https://mobile.alipay.com/index.htm">首次使用请下载手机支付宝</a></div>
+                    </div>
+                    <div>
+                        <img src="./images/saosao.png" alt="">
+                    </div>
+                </div>
+                <div id="alipay3" class="alipay">
+                    <div class="code-wrap">
+                        <div class="code-money">
+                            扫 一 扫 付 款 （ 元 ）
+                            <b class="jee2"></b>
+                        </div>
+                        <div class="QRcode">
+                            <img src="./images/code2.jpg" alt="">
+                            <div class="QRcode-desc">
+                                <div class="QRcode-desc-img">
+                                    <img src="./images/saosao1.png" style="width: 28%;" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tips"><a href="https://mobile.alipay.com/index.htm">首次使用请下载手机支付宝</a></div>
+                    </div>
+                    <div>
+                        <img src="./images/saosao.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/zf.js"></script>
+</body>
+</html>
